@@ -1,36 +1,61 @@
-/* General background */
+/* General dark theme */
 body {
-  background-color: #1e1e1e; /* dark grey/black */
-  color: #d3d3d3; /* light grey text */
+  background-color: #0d0d0d; /* almost black */
+  color: #e0e0e0; /* light grey text */
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Jabber title */
-h1, .jabber-title {
+/* Sidebar */
+.sidebar {
+  background-color: #1a1a1a; /* dark grey */
+  padding: 15px;
+  height: 100vh;
+}
+
+/* Logo */
+.sidebar::before {
+  content: url('logo.png'); /* your logo image */
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 80px;
+  height: auto;
+}
+
+/* Title */
+h1, .title, .header {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 2rem;
-  color: #a855f7; /* purple */
-}
-
-/* Chat messages */
-.message {
-  background-color: #2a2a2a;
-  color: #d3d3d3;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 5px 0;
+  color: #bb86fc; /* purple text */
+  text-align: center;
 }
 
 /* Buttons */
-button {
-  background-color: #a855f7; /* purple */
-  border: none;
+button, .send-btn, .remember-btn, .schedule-btn {
+  background-color: #bb86fc; /* purple */
   color: white;
+  border: none;
   padding: 10px 15px;
+  margin: 5px;
   border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #9333ea; /* darker purple */
+  background-color: #9b63d9; /* darker purple */
+}
+
+/* Chat bubbles */
+.chat-bubble {
+  background-color: #2a2a2a; /* grey */
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+/* User messages */
+.chat-bubble.user {
+  background-color: #3a3a3a; /* slightly lighter grey */
+  color: #bb86fc; /* purple text */
 }
