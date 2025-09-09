@@ -1,0 +1,36 @@
+/* General background */
+body {
+  background-color: #1e1e1e; /* dark grey/black */
+  color: #d3d3d3; /* light grey text */
+  font-family: Arial, sans-serif;
+}
+
+/* Jabber title */
+h1, .jabber-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2rem;
+  color: #a855f7; /* purple */
+}
+
+/* Chat messages */
+.message {
+  background-color: #2a2a2a;
+  color: #d3d3d3;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+/* Buttons */
+button {
+  background-color: #a855f7; /* purple */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9333ea; /* darker purple */
+}
