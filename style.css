@@ -7,19 +7,18 @@ body {
   padding: 0;
 }
 
-/* Sidebar */
-.sidebar {
-  background-color: #1a1a1a; /* dark grey */
-  padding: 15px;
-  height: 100vh;
+/* Header logo */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-/* Logo */
-.sidebar::before {
-  content: url('logo.png'); /* your logo image */
-  display: block;
-  margin: 0 auto 20px auto;
-  width: 80px;
+header .logo {
+  height: 40px;
+  margin-right: 10px;
+}
   height: auto;
 }
 
